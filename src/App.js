@@ -3,12 +3,18 @@ import "./App.css";
 import SingleCard from "./components/SingleCard";
 
 const cardImages = [
-	{ src: "/img/helmet-1.png", matched: false },
-	{ src: "/img/potion-1.png", matched: false },
-	{ src: "/img/ring-1.png", matched: false },
-	{ src: "/img/scroll-1.png", matched: false },
-	{ src: "/img/shield-1.png", matched: false },
-	{ src: "/img/sword-1.png", matched: false },
+	{ src: "/img/king_1.svg", matched: false },
+	{ src: "/img/king_2.svg", matched: false },
+	{ src: "/img/king_3.svg", matched: false },
+	{ src: "/img/king_4.svg", matched: false },
+	{ src: "/img/queen_1.svg", matched: false },
+	{ src: "/img/queen_2.svg", matched: false },
+	{ src: "/img/queen_3.svg", matched: false },
+	{ src: "/img/queen_4.svg", matched: false },
+	{ src: "/img/joker_1.svg", matched: false },
+	{ src: "/img/joker_2.svg", matched: false },
+	{ src: "/img/joker_3.svg", matched: false },
+	{ src: "/img/joker_4.svg", matched: false },
 ];
 
 function App() {
@@ -84,8 +90,10 @@ function App() {
 
 	return (
 		<div className='App'>
+    <div className="header"> 
 			<h1>Matching Game</h1>
 			<button onClick={shuffleCards}>New Game</button>
+      </div>
 			<div className='card-grid'>
 				{cards.map((card) => (
 					<SingleCard

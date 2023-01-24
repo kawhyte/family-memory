@@ -1,5 +1,5 @@
 .App {
-  max-width: 860px;
+  max-width: 1220px;
   margin: 40px auto;
 }
 
@@ -22,6 +22,19 @@ button:hover {
 
   margin-top:40px;
   display:grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(8, 1fr);
   grid-gap:20px;
+}
+
+.header{
+
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  
+}
+.header h1{
+  margin-right: 30px;
 }
