@@ -1,5 +1,5 @@
 .App {
-  max-width: 1220px;
+  max-width: 1200px;
   margin: 40px auto;
 }
 
@@ -35,6 +35,6 @@ button:hover {
   justify-content: center;
   
 }
-.header h1{
+.header h1, p{
   margin-right: 30px;
 }
