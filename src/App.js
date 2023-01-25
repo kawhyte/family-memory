@@ -19,6 +19,10 @@ const cardImages = [
 	{ src: "/img/ten_diamond.svg", matched: false },
 	{ src: "/img/eight_club.svg", matched: false },
 	{ src: "/img/eight_spade.svg", matched: false },
+	{ src: "/img/ace_spade.svg", matched: false },
+	{ src: "/img/ace_club.svg", matched: false },
+	{ src: "/img/two_heart.svg", matched: false },
+	{ src: "/img/two_spade.svg", matched: false },
 	
 ];
 
@@ -95,6 +99,11 @@ function App() {
 
 	return (
 		<div className='App'>
+    <div className="header"> 
+    <h1>Matching Game</h1>
+    <p>Turns: {turns}</p>
+    <button onClick={shuffleCards}>New Game</button>
+    </div>
   
 			<div className='card-grid'>
 				{cards.map((card, count) => (
@@ -109,11 +118,7 @@ function App() {
 				))}
 			</div>
   
-      <div className="header"> 
-			<h1>Matching Game</h1>
-      <p>Turns: {turns}</p>
-			<button onClick={shuffleCards}>New Game</button>
-      </div>
+  
 		</div>
 	);
 }
