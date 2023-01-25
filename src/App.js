@@ -73,7 +73,7 @@ function App() {
 		}
 	}, [choiceOne, choiceTwo]);
 
-	console.log("Cards State", cards);
+	//console.log("Cards State", cards);
 
 	// rest choices and increase turn
 	const resetTurn = () => {
@@ -97,13 +97,14 @@ function App() {
 		<div className='App'>
   
 			<div className='card-grid'>
-				{cards.map((card) => (
+				{cards.map((card, count) => (
 					<SingleCard
 						key={card.id}
 						card={card}
 						handleChoice={handleChoice}
 						flipped={card === choiceOne || card === choiceTwo || card.matched}
             disabled={disabled}
+            count ={count}
 					/>
 				))}
 			</div>
